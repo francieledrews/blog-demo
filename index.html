@@ -1,57 +1,95 @@
 <!DOCTYPE html>
 <html>
-<header>
+
+<head>
     <meta charset="uft-8">
     <title>Personal Blog Website Demo</title>
     <meta name="description"
         content="A personal blog website demo built as part of the Front End Web Development Course from Udacity.">
     <meta name="portview" content="width=device-width,initial-scale=1.0">
-</header>
+    <link href="index.css" type="text/css" rel="stylesheet">
+</head>
 
-<body>
-    <!-- Replace title with logo later -->
-    <h1>Personal Blog Website Demo</h1>
+<body class="container">
+
+    <header class="header">
+        <h1>Personal Blog Website Demo</h1>
+    </header>
+
     <nav class="navbar">
-        <a href="/">Home</a>
-        <a href="/">Subpage1</a>
-        <a href="/">Subpage2</a>
-        <a href="/">About me</a>
-        <a href="/">Contact</a>
-        <button><a href="/">Subscribe</a></button>
+        <div><a href="./index.html">Home</a></div>
+        <div><a href="./subpage1.html">Subpage1</a></div>
+        <div><a href="#">Subpage2</a></div>
+        <div><a href="#">About me</a></div>
+        <a href="#">Contact</a>
+        <div><button><a href="#">Subscribe</a></button></div>
     </nav>
 
-    <section>
-        <!-- <img src="./assets/" alt="description"> -->
-        <h2>Blog Post 1</h2>
-        <h4>When it was posted</h4>
-        <p>Short introduction...<a href="/">More</a></p>
-        <div>
-            <img src="./assets/comments.png" alt="icon to comments">
-            <img src="./assets/link.png" alt="icon to link">
-        </div>
-    </section>
-    
-    <section>
-        <a href="/"><img src="./assets/avatar.png" alt="writer's avatar"></a>
-        <h3>About Me</h3>
-        <p>Short introduction</p>
-    </section>
+    <div class="main">
+        <article class="cards">
+            <!-- <img src="./assets/" alt="description"> -->
+            <section class="card">
+                <h2 class="blogPostTitle">Blog Post 1</h2>
+                <h4 class="blogPostDate">When it was posted</h4>
+                <p class="blogPostIntro">Short introduction...<a href="/">More</a></p>
+                <div class="wrapperIcons">
+                    <img class="comments" src="./assets/comments.png" alt="icon to comments">
+                    <img class="link" src="./assets/link.png" alt="icon to link">
+                </div>
+            </section>
+            <section class="card">
+                <h2 class="blogPostTitle">Blog Post 1</h2>
+                <h4 class="blogPostDate">When it was posted</h4>
+                <p class="blogPostIntro">Short introduction...<a href="/">More</a></p>
+                <div class="wrapperIcons">
+                    <img class="comments" src="./assets/comments.png" alt="icon to comments">
+                    <img class="link" src="./assets/link.png" alt="icon to link">
+                </div>
+            </section>
+            <section class="card">
+                <h2 class="blogPostTitle">Blog Post 1</h2>
+                <h4 class="blogPostDate">When it was posted</h4>
+                <p class="blogPostIntro">Short introduction...<a href="/">More</a></p>
+                <div class="wrapperIcons">
+                    <img class="comments" src="./assets/comments.png" alt="icon to comments">
+                    <img class="link" src="./assets/link.png" alt="icon to link">
+                </div>
+            </section>
+            <section class="card">
+                <h2 class="blogPostTitle">Blog Post 1</h2>
+                <h4 class="blogPostDate">When it was posted</h4>
+                <p class="blogPostIntro">Short introduction...<a href="/">More</a></p>
+                <div class="wrapperIcons">
+                    <img class="comments" src="./assets/comments.png" alt="icon to comments">
+                    <img class="link" src="./assets/link.png" alt="icon to link">
+                </div>
+            </section>
+        </article>
 
-    <section>
-        <h3>Photo Gallery</h3>
-        <div>
-            <img src="./assets/pic1.jpg" alt="description">
-            <img src="./assets/pic2.jpg" alt="description">
-            <img src="./assets/pic3.jpg" alt="description">
-            <img src="./assets/pic4.jpg" alt="description">
-            <img src="./assets/pic5.jpg" alt="description">
-            <img src="./assets/pic6.jpg" alt="description">
-        </div>
-    </section>
+        <aside class="sidebar">
+            <div class="aboutMe">
+                <a href="#"><img class="avatar" src="./assets/avatar.png" alt="writer's avatar"></a>
+                <h3 class="aboutMeTitle">About Me</h3>
+                <p class="intro">Short introduction</p>
+            </div>
+
+            <div class="photoGallery">
+                <h3 class="photoGalleryTitle">Photo Gallery</h3>
+                <div class="setOfImages">
+                    <img class="img1" src="./assets/pic1.jpg" alt="description">
+                    <img class="img2" src="./assets/pic2.jpg" alt="description">
+                    <img class="img3" src="./assets/pic3.jpg" alt="description">
+                    <img class="img4" src="./assets/pic4.jpg" alt="description">
+                    <img class="img5" src="./assets/pic5.jpg" alt="description">
+                    <img class="img6" src="./assets/pic6.jpg" alt="description">
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p>Copyright</p>
+    </footer>
 </body>
-
-<footer>
-    <p>Copyright</p>
-</footer>
 
 </html>
