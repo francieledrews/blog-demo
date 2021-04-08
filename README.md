@@ -1,5 +1,6 @@
-#Metamophosis#
-###A Personal Blog Website - DEMO###
+# Metamophosis
+
+### A Personal Blog Website - DEMO
 
 This project was built with **HTML** and **CSS**.
 <br> 
