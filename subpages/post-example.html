@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="uft-8">
+    <title>Metamorphosis</title>
+    <meta name="description"
+        content="A personal blog website demo built as part of the Front End Web Development Course from Udacity.">
+    <meta name="portview" content="width=device-width,initial-scale=1.0">
+    <link href="../styles/index.css" type="text/css" rel="stylesheet">
+    <link href="../styles/categories.css" type="text/css" rel="stylesheet">
+    <link href="../styles/posts.css" type="text/css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+
+<body class="container-fluid">
+
+    <header class="header">
+        <img src="../assets/female-logo.svg" alt="logo">
+        <h1>Metamorphosis</h1>
+    </header>
+
+    <nav id="navbar">
+        <label for="burger-menu" class="burger-menu"><img src="../assets/menu.svg" alt="burger menu"></label>
+        <input type="checkbox" id="burger-menu" role="button">
+        <ul id="nav-list">
+            <li class="nav-item"><a href="../index.html">Home</a></li>
+            <li class="nav-item"><a href="./chronicles.html">Chronicles</a></li>
+            <li class="nav-item"><a href="./yey-2ndhand.html">Yey, 2ndHand!</a></li>
+            <li class="nav-item"><a href="./inspiring-women.html">Inspiring Women</a></li>
+            <li class="nav-item"><a href="./about.html">About Me</a></li>
+            <li class="nav-item"><button type="submit" class="btn btn-primary">Subscribe</button></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <article class="wrapper-post">
+            <h2>Post Example</h2>
+            <h6 class="card-subtitle mb-2 text-muted">Posted in march 17, 2021</h6>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Sed ullamcorper morbi tincidunt ornare massa. Orci eu
+                lobortis elementum nibh tellus. Elit ullamcorper dignissim cras tincidunt lobortis feugiat. Sed
+                egestas egestas fringilla phasellus faucibus scelerisque eleifend. Dui sapien eget mi proin.
+                Facilisis mauris sit amet massa vitae tortor.</p>
+
+            <figure>
+                <blockquote class="blockquote">
+                    <p>A well-known quote, contained in a blockquote element.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                </figcaption>
+            </figure>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Sed ullamcorper morbi tincidunt ornare massa. Orci eu
+                lobortis elementum nibh tellus. Elit ullamcorper dignissim cras tincidunt lobortis feugiat. Sed
+                egestas egestas fringilla phasellus faucibus scelerisque eleifend. Dui sapien eget mi proin.
+                Facilisis mauris sit amet massa vitae tortor.</p>
+
+            <p class="lead">
+                This is a lead paragraph. It stands out from regular paragraphs.
+            </p>
+
+            <ul class="list-unstyled">
+                <li>This is a list.</li>
+                <li>It appears completely unstyled.</li>
+                <li>Structurally, it's still a list.</li>
+                <li>However, this style only applies to immediate child elements.</li>
+                <li>Nested lists:
+                    <ul>
+                        <li>are unaffected by this style</li>
+                        <li>will still show a bullet</li>
+                        <li>and have appropriate left margin</li>
+                    </ul>
+                </li>
+                <li>This may still come in handy in some situations.</li>
+            </ul>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Sed ullamcorper morbi tincidunt ornare massa. Orci eu
+                lobortis elementum nibh tellus. Elit ullamcorper dignissim cras tincidunt lobortis feugiat. Sed
+                egestas egestas fringilla phasellus faucibus scelerisque eleifend. Dui sapien eget mi proin.
+                Facilisis mauris sit amet massa vitae tortor.</p>
+
+            <div class="wrapper-icons">
+                <a href="#"><img class="link" src="../assets/link.svg" alt="icon to link"></a>
+            </div>
+            <div class="comments">
+                <h2>Add Comment</h2>
+                <textarea name="comment" rows="4" cols="50" form="userform" placeholder="Enter your comment here..."></textarea>
+                <br>
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </article>
+        <aside class="sidebar">
+            <div class="wrapper-gallery">
+                <h3 class="gallery-title">Photo Gallery</h3>
+                <div class="gallery">
+                    <img class="img1" src="../assets/pic1.jpg" alt="pink flowers">
+                    <img class="img2" src="../assets/pic2.jpg" alt="man walking in a tunnel">
+                    <img class="img3" src="../assets/pic3.jpg" alt="outdoor patio of a cafe">
+                    <img class="img4" src="../assets/pic4.jpg" alt="a couple on the top of mountain">
+                    <img class="img5" src="../assets/pic5.jpg" alt="computer screen displaying a quartzo">
+                    <img class="img6" src="../assets/pic6.jpg" alt="guys filming a woman dancing">
+                    <img class="img4" src="../assets/pic7.jpg"
+                        alt="street art representing two male kids looking up and smiling">
+                    <img class="img5" src="../assets/pic8.jpg" alt="different coloured paint tins and brushes">
+                    <img class="img6" src="../assets/pic9.jpg" alt="woman taking a coffee and reading a book at home">
+                </div>
+            </div>
+            <div class="wrapper-categories">
+                <h3 class="categories-title">Categories</h3>
+                <p><a href="./chronicles-page.html"><img src="../assets/bookmark.svg">Chronicles (4)</a></p>
+                <p><a href="./yey-2ndhand.html"><img src="../assets/bookmark.svg">Yey, 2ndHand! (3)</a></p>
+                <p><a href="./inspiring-women.html"><img src="../assets/bookmark.svg">Inspiring Women (1)</a></p>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="wrapper-social-media-icons">
+            <a href="#"><img src="../assets/instagram.svg" alt="instagram logo"></a>
+            <a href="#"><img src="../assets/facebook.svg" alt="facebook logo"></a>
+            <a href="#"><img src="../assets/twitter.svg" alt="twitter logo"></a>
+        </div>
+        <p>Copyright <img class="copyright" src="../assets/copyright.svg" alt="copyright logo"> 2021, Franciele Drews de
+            Souza. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

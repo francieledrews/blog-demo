@@ -1,0 +1,22 @@
+.wrapper-gallery {
+    margin-top: 0;
+}
+
+.wrapper-categories {
+    display: block;
+    margin-top: 50px;
+}
+
+.wrapper-categories img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.wrapper-categories a {
+   color: #FB4C39;
+}
+
+.wrapper-categories a:hover {
+    color: #D9329E;
+}

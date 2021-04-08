@@ -12,7 +12,7 @@
 /*Styles for header*/
 .header {
     grid-area: hd;
-    background-image: url('./assets/header.jpg');
+    background-image: url('../assets/header.jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -114,7 +114,7 @@ input[type=checkbox]:checked~#nav-list {
 /*Styles for cards - blog posts*/
 .wrapper-cards {
     grid-area: cards;
-    margin: 0;
+    margin: 20px 0 0 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
