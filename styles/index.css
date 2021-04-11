@@ -1,11 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body * {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #212529;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
 /*Grid for Homepage*/
 
-.container-fluid {
+.container {
     display: grid;
     margin: 0;
     grid-template-columns: auto;
     grid-template-rows: 250px minmax(50px, auto) auto auto;
     grid-template-areas: "hd" "navbar" "main" "ft";
+    background-color: #fff;
+    width: 100%;
 }
 
 /*Styles for header*/
@@ -18,12 +52,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    text-align: center;
     width: 100%;
 }
 
 .header h1 {
     margin: 0;
+    color: #fff;
 }
 
 .header img {
@@ -99,12 +134,25 @@ input[type=checkbox]:checked~#nav-list {
     display: block;
 }
 
-.btn-primary {
-    background-color: #FB4C39 !important;
-    border-color: #FB4C39 !important;
+.btn {
+    color: #fff;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #FB4C39;
+    border-color: #FB4C39;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 0.35rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.15s ease-in-out;
 }
 
-.btn-primary:hover {
+.btn:hover {
     background-color: #D9329E !important;
     border-color: #D9329E !important;
 }
@@ -118,8 +166,12 @@ input[type=checkbox]:checked~#nav-list {
     grid-template-rows: auto;
     grid-template-areas: "cards sb";
     margin: 20px 0;
-    padding: 5%;
+    padding: 4%;
     width: 100%;
+}
+
+.main h2 {
+    margin-left: 1rem;
 }
 
 /*Styles for cards - blog posts*/
@@ -133,7 +185,31 @@ input[type=checkbox]:checked~#nav-list {
 }
 
 .card {
-    margin-bottom: 20px;
+    width: 18rem;
+    margin: 0 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+
+.card-subtitle {
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+    margin-top: -0.25rem;
+}
+
+.card-text {
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 .wrapper-icons {
@@ -177,6 +253,10 @@ input[type=checkbox]:checked~#nav-list {
     width: 100%;
 }
 
+.wrapper-avatar {
+    margin-bottom: 20px;
+}
+
 .avatar {
     width: 40%;
     height: 40%;
@@ -187,10 +267,6 @@ input[type=checkbox]:checked~#nav-list {
     display: block;
     margin-bottom: 50px;
     width: 100%;
-}
-
-.wrapper-avatar {
-    margin-bottom: 50px;
 }
 
 .wrapper-gallery {
@@ -230,6 +306,9 @@ input[type=checkbox]:checked~#nav-list {
     margin-bottom: 10px;
     font-size: smaller;
     width: 100%;
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .wrapper-social-media-icons {
@@ -255,6 +334,9 @@ input[type=checkbox]:checked~#nav-list {
 /*Responsive Styles*/
 
 @media (max-width: 383px) {
+    .header h1 {
+        font-size: 2.25rem;
+    }
     .header img {
         width: 20%;
         height: 20%;
@@ -285,7 +367,10 @@ input[type=checkbox]:checked~#nav-list {
         grid-template-rows: repeat(2, auto);
         grid-template-areas: "cards" "sb";
         justify-items: center;
+    }
+    .main h2 {
         text-align: center;
+        margin-left: 0;
     }
     .wrapper-cards {
         display: flex;
@@ -294,7 +379,7 @@ input[type=checkbox]:checked~#nav-list {
         align-items: center;
     }
     .card {
-        width: 100% !important;
+        width: 100%;
     }
     .wrapper-icons {
         margin: auto;
@@ -302,10 +387,6 @@ input[type=checkbox]:checked~#nav-list {
     .wrapper-about {
         margin: 50px auto;
         text-align: center;
-    }
-    .avatar {
-        width: 20%;
-        height: 20%;
     }
     .wrapper-gallery {
         text-align: center;
@@ -318,6 +399,13 @@ input[type=checkbox]:checked~#nav-list {
 }
 
 @media (min-width: 383px) and (max-width: 710px) {
+    .header h1 {
+        font-size: 2.75rem;
+    }
+    .header img {
+        width: 30%;
+        height: 30%;
+    }
     #navbar {
         flex-direction: column;
     }
@@ -347,20 +435,20 @@ input[type=checkbox]:checked~#nav-list {
     }
     .main h2 {
         text-align: center;
+        margin-left: 0;
     }
     .wrapper-cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+    }
+    .card {
+        width: calc(14rem + 5vw);
     }
     .wrapper-about {
         margin: 50px auto;
         text-align: center;
-    }
-    .avatar {
-        width: 30%;
-        height: 30%;
     }
     .wrapper-gallery {
         text-align: center;
@@ -370,7 +458,7 @@ input[type=checkbox]:checked~#nav-list {
 @media (min-width: 710px) and (max-width: 800px) {
     .main {
         grid-template-columns: 60% 40%;
-        padding: 5% 1%;
+        padding: 1% 5%;
     }
 
     .gallery {
@@ -380,9 +468,9 @@ input[type=checkbox]:checked~#nav-list {
     }
 }
 
-@media (min-width: 800px) and (max-width: 973px) {
+@media (min-width: 800px) and (max-width: 993px) {
     .card {
-        width: 25rem !important;
+        width: calc(25rem + 10vw);
     }
     .gallery {
         display: grid;
@@ -390,10 +478,3 @@ input[type=checkbox]:checked~#nav-list {
         grid-template-rows: repeat(4, 1fr);
     }
 }
-
-@media (min-width: 973px) and (max-width: 1056px) {
-    .card {
-        width: 32rem !important;
-    }
-}
-

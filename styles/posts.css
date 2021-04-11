@@ -2,7 +2,42 @@
     margin-right: 80px;
 }
 
+.wrapper-post h2 {
+    margin-left: 0;
+}
+
+figure {
+    margin: 0 0 1rem;
+}
+
+blockquote {
+    margin: 0 0 1rem;
+}
+
+.blockquote {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.blockquote-footer {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    font-size: .875em;
+    color: #6c757d;
+}
+
+.blockquote-footer::before {
+    content: "\2014 ";
+}
+
+.lead {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
 .comments {
     display: block;
     margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
