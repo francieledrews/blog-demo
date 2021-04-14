@@ -7,7 +7,7 @@ This project was built only with **HTML** and **CSS**.
 
 <br> 
 
-It has design responsive, including a burger menu for small screens and devices.
+It has responsive design, including a burger menu for small screens and devices.
 ![burger menu closed](./assets/burger-menu.png)
 ![burger menu closed](./assets/burger-menu-open.png)
 
