@@ -3,6 +3,7 @@
 ### A Personal Blog Website - DEMO
 
 This project was built only with **HTML** and **CSS**.
+
 ![screenshot of the homepage](./assets/screenshot.png)
 
 <br> 
